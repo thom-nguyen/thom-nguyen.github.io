@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- ################################################################################################################################## -->
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,11 +17,21 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <!-- ################################################################################################################################## -->
+
+    <!-- ################################################################################################################################## -->
     <body id="page-top">
+        <!-- __________________________________________________________________________________________________________________________________ -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/tn-logo.png" /></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <img src="assets/img/tn-logo.png" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
@@ -31,8 +42,10 @@
                 </div>
             </div>
         </nav>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
-        <!-- Masthead-->
+        <!-- __________________________________________________________________________________________________________________________________ -->
+        <!-- Masthead -->
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Hello! My name is</div>
@@ -40,20 +53,64 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#projects">View My Portfolio</a>
             </div>
         </header>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
+        <!-- __________________________________________________________________________________________________________________________________ -->
         <!-- Projects -->
         <section class="page-section bg-light" id="projects">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projects</h2>
-                    <h3 class="section-subheading text-muted">Here are some side projects and public work that I've done!</h3>
+                    <h3 class="section-subheading text-muted">Check out some of the projects that I've worked on!</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#modal-foresight" 
+                                ><div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/foresight-thumbnail.png" alt=""
+                            /></a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ForeSight</div>
+                                <div class="portfolio-caption-subheading text-muted">Flutter, AWS EC2, Python, PyTorch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#modal-bball_track"
+                                ><div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/bball_track-thumbnail.png" alt=""
+                            /></a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">BBall Track</div>
+                                <div class="portfolio-caption-subheading text-muted">OpenPose, Python, PyTorch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#modal-klarrnet"
+                                ><div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/klarrnet-thumbnail.png" alt=""
+                            /></a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">KLARR-NET</div>
+                                <div class="portfolio-caption-subheading text-muted">Python, PyTorch, Viola Jones</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#modal-toll_calculator"
                                 ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/projects/toll_calculator-thumbnail.png" alt=""
                             /></a>
@@ -65,9 +122,37 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#modal-etr_chat"
+                                ><div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/etr_chat-thumbnail.png" alt=""
+                            /></a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Messenger Bot</div>
+                                <div class="portfolio-caption-subheading text-muted">Python, Facebook Messenger API</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#modal-fes_rowing"
+                                ><div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/fes_rowing-thumbnail.png" alt=""
+                            /></a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FES Coaching System</div>
+                                <div class="portfolio-caption-subheading text-muted">Python, National Instruments DAQ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#modal-simple_maps"
                                 ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i class="fas fa-expand-alt fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/projects/simple_maps-thumbnail.png" alt=""
                             /></a>
@@ -79,50 +164,22 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#modal-fes_rowing"
-                                ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/projects/fes_rowing-thumbnail.png" alt=""
-                            /></a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">FES Coaching System</div>
-                                <div class="portfolio-caption-subheading text-muted">Python, National Instruments DAQ</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#modal-etr_chat"
-                                ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/projects/etr_chat-thumbnail.png" alt=""
-                            /></a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Messenger Bot</div>
-                                <div class="portfolio-caption-subheading text-muted">Python, Facebook Messenger API</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#">
-                                <img class="img-fluid" src="assets/img/projects/project_trailblazer-thumbnail.png" alt=""/>
+                                <img class="img-fluid" src="assets/img/projects/wip-thumbnail.png" alt=""/>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Project Trail Blazer</div>
-                                <div class="portfolio-caption-subheading text-muted">In Progess</div>
+                                <div class="portfolio-caption-heading">Project Probst</div>
+                                <div class="portfolio-caption-subheading text-muted">In Progress</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#">
-                                <img class="img-fluid" src="assets/img/projects/project_rose-thumbnail.png" alt=""/>
+                                <img class="img-fluid" src="assets/img/projects/wip-thumbnail.png" alt=""/>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Project Rose</div>
+                                <div class="portfolio-caption-heading">Project Kirk</div>
                                 <div class="portfolio-caption-subheading text-muted">In Progress</div>
                             </div>
                         </div>
@@ -130,13 +187,15 @@
                 </div>
             </div>
         </section>
+        <!-- __________________________________________________________________________________________________________________________________ -->
         
+        <!-- __________________________________________________________________________________________________________________________________ -->
         <!-- Me -->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Thomas Nguyen</h2>
-                    <h3 class="section-subheading text-muted">University of Toronto, Bachelor of Applied Science in Computer Engineering (Class of 2021)</h3>
+                    <h3 class="section-subheading text-muted">B.A.Sc in Computer Engineering with Honours | University of Toronto (Class of 2021)</h3>
                 </div>
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/me.jpg" alt="" />
@@ -146,26 +205,29 @@
                     <a class="btn btn-dark btn-social mx-2" href="https://medium.com/@thom_nguyen" target="_blank"><i class="fab fa-medium-m"></i></a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
+                    <div class="col-lg-8 mx-auto text-justify">
                         <p class="large text-muted">
-                            I am a Software Engineer in my senior year of Computer Engineering at the University of Toronto. I believe that in order to succeed in the fast-paced, ever-evolving industry of software engineering, one must be willing to constantly learn and adapt alongside the industry.
+                            I am a Software Engineer, currently working at Amazon (Toronto). I believe that in order to succeed in the fast-paced, ever-evolving industry of software engineering, 
+                            one must be willing to constantly learn and adapt alongside the industry.
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
+                    <div class="col-lg-8 mx-auto text-justify">
                         <p class="large text-muted">
                             I was born and raised in Toronto, Canada but love travelling to new places. <br>
                             I'm an avid NBA basketball fan (go Celtics)! <br>
                             In my spare time I like to play basketball, paddle on the water (dragonboat), and run. <br>
-                            I've paddled in Hungary in 2018 and will hopefully be on the Under24 Team Canada 2021 roster!
+                            I've paddled in Hungary in 2018 and will hopefully be on the 2021 Team Canada roster!
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
-        <!-- Skills-->
+        <!-- __________________________________________________________________________________________________________________________________ -->
+        <!-- Skills -->
         <section class="page-section bg-light" id="skills">
             <div class="container">
                 <div class="text-center">
@@ -180,8 +242,8 @@
                             Languages
                         </h4>
                         <p class="text-muted">
-                            Java, C, C++, C#, SQL <br>
-                            Python, Swift, React <br>
+                            Java, C, C++, C#, SQL, <br>
+                            Python, Swift, React, <br>
                             HTML, CSS, JavaScript (NodeJS, AngularJS)
                         </p>
                     </div>
@@ -193,7 +255,7 @@
                             Amazon Web Services
                         </h4>
                         <p class="text-muted">
-                            API Gateway, S3 <br>
+                            API Gateway, S3, EC2, <br>
                             Cognito, Cloudfront
                         </p>
                     </div>
@@ -205,36 +267,46 @@
                             Salesforce
                         </h4>
                         <p class="text-muted">
-                            Lightning Environment <br>
-                            Lightning Web Components <br>
+                            Lightning Environment, <br>
+                            Lightning Web Components, <br>
                             Apex, Custom Triggers and Components
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
-        <!-- Resume-->
+        <!-- __________________________________________________________________________________________________________________________________ -->
+        <!-- Resume -->
         <section class="page-section" id="resume">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Resume</h2>
                     <h3 class="section-subheading text-muted">
-                        My resume can be found on my <a href="https://github.com/thom-nguyen/resume" target="_blank">Github</a>
+                        My resume can be found on my <a href="https://github.com/thom-nguyen/resume/blob/master/Thomas%20Nguyen%20-%20Resume.pdf" target="_blank">Github</a>
                     </h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 my-3">
+                    <div class="col-md-3 col-sm-4 my-3">
+                        <a href="https://www.amazon.ca/" target="_blank="><img class="img-fluid d-block mx-auto" src="assets/img/logos/amazon.png" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 my-3">
+                        <a href="https://bit.ly/ece496foresight" target="_blank="><img class="img-fluid d-block mx-auto" src="assets/img/logos/foresight.png" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 my-3">
                         <a href="https://www.407etr.com/en/index.html" target="_blank="><img class="img-fluid d-block mx-auto" src="assets/img/logos/407etr.png" alt="" /></a>
                     </div>
-                    <div class="col-md-6 col-sm-6 my-3">
+                    <div class="col-md-3 col-sm-4 my-3">
                         <a href="https://www.uhn.ca/TorontoRehab" target="_blank"><img class="img-fluid d-block mx-auto" src="assets/img/logos/uhn.png" alt="" /></a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
-        <!-- Footer-->
+        <!-- __________________________________________________________________________________________________________________________________ -->
+        <!-- Footer -->
         <footer class="footer py-4 bg-dark">
             <div class="container">
                 <div class="row align-items-center">
@@ -246,6 +318,7 @@
                 </div>
             </div>
         </footer>
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -258,17 +331,355 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
+        <!-- __________________________________________________________________________________________________________________________________ -->
+        <!-- Portfolio Modals -->
 
+        <!-- modal-foresight -->
+        <div class="portfolio-modal modal fade" id="modal-foresight" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">
+                                        ForeSight - Medical Screening App
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        An Android app that screens potential medical conditions to motivate users to seek medical attention when required.
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/foresight.png" alt="" />
+                                    <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Video</h6>
+                                        <div class="video-container">
+                                            <iframe width="560" height="315" src="https://youtu.be/qNFLonOs76U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div> <br>                                 
+                                        <h6>Links</h6>
+                                        <p>
+                                            You can download this app on the <a href="https://bit.ly/ece496foresight" target="_blank">Google PlayStore</a>! <br>
+                                            The codebase for this project can be found on my <a href="https://bit.ly/ece496codebase" target="_blank">GitHub</a>. <br>
+                                            The academic poster can be found <a href="https://drive.google.com/file/d/1dJv3AGHLTMO5izDFQyUMO51o0oFOkxEJ/view?usp=sharing" target="_blank">here</a>. <br>
+                                            Documentation describing the project design process, testing, and verification can be found <a href="https://docs.google.com/document/d/1LWMt2MqDmDpiTMaoDmu4xVwBnXACPbAIQ20DXN3YUkk/edit?usp=sharing" target="_blank">here</a>.
+                                        </p>
+                                        <h6>Timeline</h6>
+                                        <p>
+                                            August 2020 - May 2021
+                                        </p>
+                                        <h6>Languages & Tools</h6>
+                                        <ul>
+                                            <li>Flutter Dart</li>
+                                            <li>Python, PyTorch, Tensorflow</li>
+                                            <li>AWS EC2, Docker</li>
+                                        </ul><br/>
+                                        <h6>Team</h6>
+                                        <ul>
+                                            <li>Soo Yeon Cho</li>
+                                            <li>Thomas Nguyen</li>
+                                            <li>Chris Pua</li>
+                                            <li>Matthew Won</li>
+                                        </ul><br/>
+                                        <h6>Overview</h6>
+                                        <p>
+                                            7 in 10 of Canadians skip seeing doctors due to long wait times, timelessness, and other barriers. Another study found that delays in receiving medical attention such as waitlist times can be fatal, 
+                                            leading to at least 20,000 deaths in Canada between 1993-2009. Barriers preventing people from accessing healthcare often lead to worsening health conditions and sometimes, death. Those who want information on 
+                                            their potential condition but do not have the time to receive a professional diagnosis must turn to alternatives that are either inaccurate or costly. 
+                                        </p>
+                                        <p>
+                                            Therefore, for our 4th year capstone design project, the team developed ForeSight, a mobile medical application that provides users a screening of their potential condition at no charge 
+                                            so that they may be well informed when deciding whether or not their condition requires further professional medical attention. ForeSight is presented in the form of a mobile application 
+                                            where users can upload or capture images to the application, which sends it to a machine learning model trained to identify medical conditions. Currently supported medical conditions are onychomycosis, 
+                                            commonly known as nail fungus, and basal cell carcinoma, a common type of skin cancer. As the team does not have an extensive medical background, this prediction is strictly a screening and not a diagnosis. 
+                                        </p>
+                                        <p>
+                                            ForeSight currently achieves an onychomycosis screening accuracy of 87% and basal cell carcinoma screening accuracy of 86%. Though these metrics are promising, the team recognizes that there are additional 
+                                            steps that must be taken in order to recognize ForeSight as a complete medical screening product, such as more extensive user training and a medical review of the product by medical professionals.
+                                        </p>
+                                        <h6>System Design</h6>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/projects/foresight_2.png" alt="" />
+                                        <p>
+                                            The front-end application was created using Flutter and is compatible for Android devices. It uses a camera and contains an API Caller module which enables communication between the user and the middleware. 
+                                            The middleware uses the EC2 cloud service provided by AWS to host the best performing machine learning model and the API Handler. The API Handler manages the communication between the front-end and the hosted model.
+                                            The back-end is the process that prepares the best performing machine learning model. This process involves building out the architecture of the model, gathering public image data for training purposes, 
+                                            and training the model to make adjustments to the model to reach the required accuracy. The model was created using PyTorch. Once the best performing model is created, it uses a flask application and docker 
+                                            container to send a copy of the model to be hosted on the middleware’s cloud.
+                                        </p>
+                                        <p>
+                                            To ensure viability of the app, the team wanted the ML model to be able to detect medical conditions from different body parts, as well as screen medical conditions in which early detection would be beneficial 
+                                            for the users. As such, the team decided to implement screening for basal cell carcinoma and onychomycosis. Onychomycosis, more commonly referred to as nail fungus, is generally painless early on, but 
+                                            can lead to more severe infections and possibly amputations if left untreated [15]. Basal cell carcinoma is a skin cancer that, if detected early enough that the tumour has not spread to other sites, 
+                                            has a 100% survival rate [16]. As such, the team is very satisfied to have been able to implement those two conditions to a considerably high final testing accuracy. 
+                                        </p>
+                                        <h6>Testing & Verification</h6>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/projects/foresight_3.png" alt="" />
+                                        <p>
+                                            782 images reserved for testing only (i.e not used in model training) were run against the team’s best performing ML model. The model achieved a final testing accuracy of 85.68%, which is greater than the approxiate 85%
+                                            accuracy of a dermatoligist. The team compared this 85.68% screening accuracy against existing medical screening applications. Out of a study, the most accurate medical screening application was Ada, a questionnaire-based
+                                             screening application, with a correct prediction rate of 71%. The testing measurements were also comparable to an onychomycosis application created by a Korean research team, which had an accuracy of 84.2%.
+                                            Though this accuracy measurements are greater, we do not believe this necessarily means that our ML model is better, as we have not done nearly as much extensive testing on real patients as the aforementioned products have.
+                                            
+                                        </p>
+                                        <h6>Acknowledgements</h6>
+                                        <ul>
+                                            <li>Professor Hamid Timorabadi, Supervisor, University of Toronto</li>
+                                            <li>Seung Seog Han, onychomycosis researcher</li>
+                                            <li>Gyeong Hun Park, onychomycosis researcher</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal-foresight -->
 
-        <!-- Portfolio Modals-->
-        <!-- modal-toll_calculator-->
+        <!-- modal-bball_track -->
+        <div class="portfolio-modal modal fade" id="modal-bball_track" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">
+                                        BBall Track - Free Throw Analysis via OpenPose Data
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        A data-centric biomechanical analysis of basketball free throws leveraging the capabilities ML limb segment detection.
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/bball_track.png" alt="" />
+                                    <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Link</h6>
+                                        <p>
+                                            Our final presentation deck can be found <a href="https://docs.google.com/presentation/d/1LG-01b3-xdxbHobHmLRiYlHrCXGv6XaM5aVc5Wj6NN0/edit?usp=sharing" target="_blank">here</a>.
+                                        </p>
+                                        <h6>Timeline</h6>
+                                        <p>
+                                            January 2021 - April 2021
+                                        </p>
+                                        <h6>Languages & Tools</h6>
+                                        <ul>
+                                            <li>OpenPose</li>
+                                            <li>Python, PyTorch</li>
+                                        </ul><br/>
+                                        <h6>Team</h6>
+                                        <ul>
+                                            <li>Christopher Calogero</li>
+                                            <li>Francis Gomes</li>
+                                            <li>Thomas Nguyen</li>
+                                            <li>Kevin Wang</li>
+                                        </ul><br/>
+                                        <h6>Motivation</h6>
+                                        <p>
+                                            With the rise of the important of data analytics in basketball, specifically the NBA, we wanted to perform a study on what makes some players more accurate free throw shooters from 
+                                            a biomechanical perspective.
+                                        </p>
+                                        <p>
+                                            Researchers have proposed several "ideal" free throw shooting methods, such as striving for a high shooting arc (55-60°), a maximum range angle of 45°, or a minimum-speed angle.
+                                            What makes determining the "ideal" free throw difficult is that the free throw is a submaximal velocity task, meaning there are an infinite combination of launch parameters than can lead to a made basket.
+                                        </p>
+                                        <p>
+                                            
+                                        </p>
+                                        <h6>Methods</h6>
+                                        <p>
+                                            The team used OpenPose to collect data points of three relatively accurate NBA free throw shooters (Stephen Curry - 92%, Damian Lillard - 93%, and Karl-Anthony Towns - 88%) and three novice free throw shooters (40% average accuracy). 
+                                            The team then created several Python scripts to extract meaningful data from the raw coordinates. Specifically, the team used anthropomorphic data of the shooters to extract angles and velocities of the shoulder, elbow, wrist, and trunk.
+                                        </p>
+                                        <h6>Analysis & Results</h6>
+                                        <ul>
+                                            <li>
+                                                Center of Mass (COM)
+                                                <ul>
+                                                    <li>
+                                                        Calculations: Trunk inclination angle (°), COM Horizontal Motion (m/s), COM Vertical Motion (m/s).
+                                                    </li>
+                                                    <li>
+                                                        Conclusions: Zero COM velocity is optimal, and trunk inclination has minimal effect.
+                                                    </li>
+                                                </ul>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/bball_track_2.png" alt="" />
+                                            </li>
+                                            <li>
+                                                Shooting Shoulder and Elbow
+                                                <ul>
+                                                    <li>
+                                                        Calculations: Shoulder and Elbow angle (°), Shoulder and Elbow anglular velocity (rad/s).
+                                                    </li>
+                                                    <li>
+                                                        Conclusions: Greater shoulder flexion leads to greater release height and margin of error, angular velocities determine release velocity and elbow angular velocity should be much greater than that of the shoulder.
+                                                    </li>
+                                                </ul>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/bball_track_3.png" alt="" />
+                                            </li>
+                                            <li>
+                                                Knee Flexion and Extension
+                                                <ul>
+                                                    <li>
+                                                        Calculations: Maximum knee flextion prior to release (°), knee flextion at release (°).
+                                                    </li>
+                                                    <li>
+                                                        Conclusions: Biomechanically, more knee flexion results in a more forceful knee extension in the extension phase. For example, some advocate for a deeply-flexed position to allow for a much higher force production
+                                                         from the legs during the extension phase. Given the trend in NBA players, for a short-range shot like the free throw, forceful knee extension may not be required like it would in a longer range jump shot.
+                                                         A reason for this is that ankle flexion is also used for lower body force production.
+                                                    </li>
+                                                </ul>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/bball_track_4.png" alt="" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal-bball_track -->
+
+        <!-- modal-klarrnet -->
+        <div class="portfolio-modal modal fade" id="modal-klarrnet" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">
+                                        KLARR-NET - Facial Emotion Recognition via Webcam
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        A machine learning model trained to detect between 7 human facial emotions using a computer webcam.
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/klarrnet.png" alt="" />
+                                    <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Video</h6>
+                                        <div class="video-container">
+                                            <iframe width="560" height="315" src="https://youtu.be/hiD7WzhI8s8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div> <br>   
+                                        <h6>Link</h6>
+                                        <p>
+                                            Documentation describing the project design process, testing, and verification can be found <a href="https://docs.google.com/document/d/1KBmOyi6vDuwSmRlhe-Lz60WLKKu-m3ZfMxegCTlyvRE/edit?usp=sharing" target="_blank">here</a>.
+                                        </p>
+                                        <h6>Timeline</h6>
+                                        <p>
+                                            September 2020 - December 2020
+                                        </p>
+                                        <h6>Languages & Tools</h6>
+                                        <ul>
+                                            <li>Python, PyTorch, Viola Jones</li>
+                                        </ul><br/>
+                                        <h6>Team</h6>
+                                        <ul>
+                                            <li>Eliano Anile</li>
+                                            <li>Thomas Nguyen</li>
+                                            <li>Kevin Raihanizadeh</li>
+                                            <li>Lucas Rea</li>
+                                        </ul><br/>
+                                        <h6>Motivation</h6>
+                                        <p>
+                                            Facial emotion recognition (FER) is a skill inherent in human beings, described as the ability of one to determine another person’s emotions from only their facial expressions. 
+                                            The team found this interesting, as one’s FER capabilities are the result of their upbringing and environment, among many other factors. The goal of the project is to mimic this innate human 
+                                            skill using a Convolutional Neural Network (CNN) to determine how accurately it can perform FER. The team believes that, if FER networks can be made accurate, it can be used in a variety of ways, including the enforcement 
+                                            of driving safety by detecting subtle changes in facial expressions related to drowsiness and drunkenness. 
+                                        </p>
+                                        <h6>Data Processing</h6>
+                                        <p>
+                                            The main dataset that was used for primary model training and tuning was the FER 2013 dataset from Kaggle, containing ~36,000 images. This dataset was split into train and test folders, with an approximate split of 
+                                            70% training data and 30% testing data. Each training and testing folder was split into a folder for each of the 7 major facial expressions: angry, disgust, fear, happy, neutral, sad, and surprise. 
+                                            The initial folder structure and split statistics can be found in Figure 5(a). Images in this dataset are of size 48x48.
+                                        </p>
+                                        <p>
+                                            The data was manually processed to ensure that the model was trained and tested on images representative of the use cases that the team expected the model to encounter during real use cases (webcam and camera).
+                                            The next step in processing the data was to consolidate the training and testing folders into one main data folder consisting of the 7 facial expression subfolders. The reasoning for this was that the team was 
+                                            unsure of the data split to use at the time of data cleaning, but was leaning towards a split of 70% training data, 15% validation data, and 15% testing data. Therefore, the team decided to programmatically split 
+                                            the data, which meant only one main folder was needed and not individual training, validation, and testing folders. As there were very few images for “disgust” relative to all the other emotions, the team decided 
+                                            to omit this emotion from the dataset and moved it to a subfolder for unused data. Inversely, as there were many more images for “happy”, the team decided to reduce this number of images and move it to the unused 
+                                            subfolder as well.
+                                        </p>
+                                        <h6>Model Architecture</h6>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/projects/klarrnet_2.png" alt="" />
+                                        <p>
+                                            The architecture of the final model is illustrated above and consists of a CNN used for feature extraction followed by an ANN for classification. The input to the CNN is a 48x48 image with 1 feature due to the 
+                                            image being greyscale. The CNN has in total 5 convolutional layers with 3x3 kernels; the first four convolutional layers followed by a 2x2 max pooling layer to reduce the dimensions of the feature maps, while 
+                                            the fifth convolutional layer is followed by a 2x2 average pooling layer. After the first two convolutional and pooling layers the team applies a batch normalization layer followed by a dropout layer with 
+                                            probability of 25%. Batch normalization is used to normalize activations that are abnormally high or low, accompanied by a dropout layer to counteract overfitting. Once the fifth and final convolutional 
+                                            layer is complete, batch normalization and dropout is again applied to ensure overly fitted activations created in intermediate convolutional layers are normalized. The output of these layers is fed into 
+                                            an ANN, the input to it after being processed by the CNN contains 256 features of size 3x3. The ANN is made up of two linear layers with 50 hidden units and 6 output units that classify the input image to 
+                                            its corresponding output emotion.  
+                                        </p>
+                                        <h6>Testing & Verification</h6>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/projects/klarrnet_3.png" alt="" />
+                                        <p>
+                                            The model’s results were evaluated using different metrics. The team took overall accuracy measurements as well as per-class accuracy measurements via confusion matrices. During training, our model’s validation accuracy 
+                                            peaked at iteration 13, and the overall accuracy of the model sits at about 76.3% for training data, 52.8% for validation data, and 52.6% for testing data. Though this measurement is insightful, it doesn’t give us a 
+                                            good representation on how the individual classes perform. For facial expression recognition, each class has vastly different features so it’s important to get a good understanding of how each expression performs.
+                                        </p>
+                                        <p>
+                                            Analyzing the output, it is clear the model underperforms with the ‘fear’ class compared to other classes such as ‘happy’. This evidence is backed up by the confusion matrix results. This is due to emotions such as 
+                                            ‘happy’ and ‘surprise’ which the model performs well on having distinct features (open mouth or smile) while fear is more subjective, varying from person to person.
+                                        </p>
+                                        <p>
+                                            To ensure that the model generalizes well, the model was evaluated against two datasets: one containing images taken of the team members, and another from the RADIATE dataset containing faces of minority 
+                                            ethnicities obtained from a Yale public repository.
+                                        </p>
+                                        <p>
+                                            The model’s performance on new datasets was as follows:
+                                            <ul>
+                                                <li>
+                                                    RADIATE dataset:
+                                                    <ul>
+                                                        <li>Number of images: 766</li>
+                                                        <li>Accuracy: 19.6%</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Dataset containing the team’s faces:
+                                                    <ul>
+                                                        <li>Number of images: 48</li>
+                                                        <li>Accuracy: 60.4%</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal-klarrnet -->
+
+        <!-- modal-toll_calculator -->
         <div class="portfolio-modal modal fade" id="modal-toll_calculator" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-11">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">
                                         407 ETR Toll Calculator
@@ -278,6 +689,10 @@
                                     </p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/projects/toll_calculator.png" alt="" />
                                     <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Link</h6>
+                                        <p>
+                                            The official 407 ETR Toll Calculator can be found <a href="https://407etr.com/en/tolls/tolls/toll-calculator.html" target="_blank">here</a>.
+                                        </p>
                                         <h6>Timeline</h6>
                                         <p>
                                             May 2019 - December 2019
@@ -290,14 +705,15 @@
                                         </ul><br/>
                                         <h6>Overview</h6>
                                         <p>
-                                            The 407 ETR Toll Calculator is a geographical information system (GIS) that allows customers to estimate the cost of a trip on the 407 ETR using trip characteristics such as entry and exit, time of day and vehicle type. This application communicates with the Google Maps API as well as 407 ETR servers to display highway interchange locations and provide accurate cost calculations for any customer trip.
+                                            The 407 ETR Toll Calculator is a geographical information system (GIS) that allows customers to estimate the cost of a trip on the 407 ETR using trip characteristics such as entry and exit, 
+                                            time of day and vehicle type. This application communicates with the Google Maps API as well as 407 ETR servers to display highway interchange locations and provide accurate cost calculations for any customer trip.
                                         </p>
                                         <h6>Implementation</h6>
                                         <p>
-                                            The application was implented primarily in HTML, CSS, and Javascript. My contributions were in the form of application enhancements, performance improvements, and bug fixes. Most notably, I refactored the Javascipt and data handling to reduce application start-up times, as well as lessen computing time and input latency. Overall, there was a 25% performance improvement.
+                                            The application was implented primarily in HTML, CSS, and Javascript. My contributions were in the form of application enhancements, performance improvements, and bug fixes. Most notably, 
+                                            I refactored the Javascipt and data handling to reduce application start-up times, as well as lessen computing time and input latency. Overall, there was a 25% performance improvement.
                                         </p>
                                     </div>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
                                 </div>
                             </div>
                         </div>
@@ -305,131 +721,20 @@
                 </div>
             </div>
         </div>
-        <!-- modal-simple_maps-->
-        <div class="portfolio-modal modal fade" id="modal-simple_maps" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <h2 class="text-uppercase">
-                                        SimpleMaps
-                                    </h2>
-                                    <p class="item-intro text-muted">
-                                        A graphical information system (GIS) of the world's major cities that includes features such as route planning, points of interest, and a fully featured search bar
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/simple_maps.png" alt="" />
-                                    <div class="justify-content-start" style="text-align: left;">
-                                        <h6>Timeline</h6>
-                                        <p>
-                                            January 2018 - April 2018
-                                        </p>
-                                        <h6>Languages & Tools</h6>
-                                        <ul>
-                                            <li>C++ (Dijkstra, A*, multithreading, simulated annealing, 2-opt)</li>
-                                            <li>OpenStreetMap API</li>
-                                            <li>OpenGL</li>
-                                        </ul><br/>
-                                        <h6>Team</h6>
-                                        <ul>
-                                            <li>Haley Cao</li>
-                                            <li>Chandra Gummaluru</li>
-                                            <li>Thomas Nguyen</li>
-                                        </ul><br/>
-                                        <h6>Overview</h6>
-                                        <p>
-                                            Our geographical information system (GIS), SimpleMaps, was a semester long project for the second year University of Toronto course ECE297: Design and Communication. The goal was to create an application to map major cities in the world using the OpenStreetMap database. In a group of three, we were to create the application and include as many features as time permitted. This project was a lot of fun as this was the first major project that I had created, and the amount of freedom given to us in terms of data structures and algorithms led to a lot of growth as a software engineer.
-                                        </p>
-                                        <h6>Implementation</h6>
-                                        <p>
-                                            The program was implemented in four stages to simplify the development process. The main objectives throughout this project was to make SimpleMaps minimalistic and responsive.
-                                        </p>
-                                        <p>
-                                            The first stage was to implement relevant basic functions, as well as define and initialize necessary data structures. Precautions were taken to minimize time complexity of these functions by selecting optimal data structures (ie. maps, unordered maps, tries, lists). In order to ensure SimpleMaps performance for the user, many data structures were initialized on application start which meant faster run time at the cost of higher memory consumption.
-                                        </p>
-                                        <p>
-                                            The second stage was to create the graphical user interface (GUI) using OpenGL as well as implement additional features. First we added natural features, building names, as well as street names and directions to the SimpleMaps GUI in familiar or intuitive colours. Following that, we added coloured-icon markers on the map for points of interest and added a search bar where the user can search for streets, intersections, points of interest, and even cities. The search bar was given added functionality by supporting fuzzy search, text-prediction, and auto-complete using tries.
-                                        </p>
-                                        <p>
-                                            The third stage was to implement a shortest-path algorithm to get from a starting location in SimpleMaps to an ending location. The goal of this step was to determine the most optimal route in terms of travel time and display this route in the SimpleMaps GUI. The shortest-path algorithm was implemented using a Dijkstra-A* hybrid. For searches from a specific location to a non-specific destination, SimpleMaps would use Dijkstra to return the closest destination matching the search criteria. For searches from a specific location to a specific destination, SimpleMaps would use A* to return the shortest path in terms of travel time to the unique destination. This hybrid algorithm resulted in run times 700% faster than the time limit provided by course instructors.
-                                        </p>
-                                        <p>
-                                            The final stage was to implement a solution to the travelling salesman problem, where there are 'packages' with a pickup and corresponding dropoff location. The goal of this step was to devise the most optimal route in terms of travel time for any given set of 'packages' in any city. The initial implementation was a modified greedy approach, where the algorithm would first pickup the nearest package, then either pickup another package or drop off a package depending on which was closest. Further implementations included 2-opt, multithreading, and simulated annealing to improve the algorithm. The final implementation was 300% faster than the initial greedy implementation and resulted in our team finishing 21st out of the 110 teams involved in the course.
-                                        </p>
-                                    </div>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- modal-fes_rowing-->
-        <div class="portfolio-modal modal fade" id="modal-fes_rowing" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <h2 class="text-uppercase">
-                                        Functional Electrical Stimulated Rowing Coaching System
-                                    </h2>
-                                    <p class="item-intro text-muted">
-                                        Researched and developed a coaching system for patients rehabilitating from partial spinal cord injuries (SCI)
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/fes_rowing.png" alt="" />
-                                    <div class="justify-content-start" style="text-align: left;">
-                                        <h6>Timeline</h6>
-                                        <p>
-                                            May 2018 - August 2018
-                                        </p>
-                                        <h6>Languages & Tools</h6>
-                                        <ul>
-                                            <li>Python, PyQt</li>
-                                            <li>National Instruments Data Acquisiton Unit (NI DAQ)</li>
-                                            <li>National Instruments LabView NXG</li>
-                                        </ul><br/>
-                                        <h6>Team</h6>
-                                        <ul>
-                                            <li>Thomas Nguyen</li>
-                                            <li>Pirashanth Theventhiran</li>
-                                        </ul><br/>
-                                        <h6>Overview</h6>
-                                        <p>
-                                            Functional electrical stimulation (FES) is a non-invasive rehabilitative technology used to produce artificial contractions in muscles. This technology has been used on individuals with incomplete spinal cord injuries (iSCI) to enable them to perform rehabilitative rowing exercise, which combines the voluntary movement of the upper body with stimulated movement of the lower body. FES is often activated manually by the user, who often require months to achieve effective rowing technique with accurate FES timing. With that in mind, the goal of this application was to develop a rowing coaching system that, in real time, displays instructions on when to administer FES.
-                                        </p>
-                                        <h6>Implementation</h6>
-                                        <p>
-                                            In order to enable users to administer FES as well as monitor their force output, a Concept 2 rowing ergometer was attached with plate sensors, motion capture markers, and an FES trigger for user-administration of FES. The iSCI users would then have electrodes attached to their quadriceps and hamstring muscles, the muscles in which the FES would induce contraction.
-                                        </p>
-                                        <p>
-                                            The front end of this application was created using Python and PyQT5 to create the graphical user interface (GUI). The application was designed to be as intuitive as possible for the user and lower the technical barrier of entry typically associated with rowing. Users were able to set exercise parametrs and then visual as well as audio queues would be given to notify the user when to administer FES.
-                                        </p>
-                                        <p>
-                                            Data acquisition was done using a National Instruments Data Acquisition Unit  (NI DAQ). This DAQ was connected the rowing ergometer to the application and analyzed user-administered FES timing. Based on the analysis, feedback would be given to the user. 
-                                        </p>
-                                    </div>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- modal-etr_chat-->
+        <!-- end modal-toll_calculator -->
+
+        <!-- modal-etr_chat -->
         <div class="portfolio-modal modal fade" id="modal-etr_chat" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-11">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">
                                         407 ETR Facebook Messenger Bot
@@ -459,17 +764,22 @@
                                         </ul><br/>
                                         <h6>Overview</h6>
                                         <p>
-                                            As part of the internal 2019 407 ETR Summer Hackathon, my team wanted to address an existing gap in the 407 ETR's services. With the release of the 407 ETR mobile app, the company wanted as many 407 ETR users to have the app as possible. We recognized that many customers would likely not feel the need to download the new app. If they were able to get by without the mobile app thus far, they may feel the tedious onboarding process associated with downloading a new app is not worth it. In other words, after a long time without an app, it would be difficult to overcome the intertia and develop new habits just for using the 407 ETR's services. To address this, we decided to implement a smart chat bot that would act as a lighter version of the 407 ETR app, providing services the user may find useful and acting as a gateway to downloading the mobile app. The team analyzed most commonly used messenging apps and discovered that Facebook Mesenger was the most commonly used messeging app among North Americans.
+                                            As part of the internal 2019 407 ETR Summer Hackathon, my team wanted to address an existing gap in the 407 ETR's services. With the release of the 407 ETR mobile app, the company wanted as 
+                                            many 407 ETR users to have the app as possible. We recognized that many customers would likely not feel the need to download the new app. If they were able to get by without the mobile app 
+                                            thus far, they may feel the tedious onboarding process associated with downloading a new app is not worth it. In other words, after a long time without an app, it would be difficult to overcome 
+                                            the intertia and develop new habits just for using the 407 ETR's services. To address this, we decided to implement a smart chat bot that would act as a lighter version of the 407 ETR app, 
+                                            providing services the user may find useful and acting as a gateway to downloading the mobile app. The team analyzed most commonly used messenging apps and discovered that Facebook Mesenger 
+                                            was the most commonly used messaging app among North Americans.
                                         </p>
                                         <h6>Implementation</h6>
                                         <p>
-                                            This chat bot is a smart chat bot integrated with Facebook Messenger that notifies customers of the 407 ETR of account details and real time statistics such as accidents, congestion, trip capture status, and billing information. Bot would use AI to record customer’s regular trips and, using live information, inform user to leave earlier or later than usual depending on live highway status and weather.
+                                            This chat bot is a smart chat bot integrated with Facebook Messenger that notifies customers of the 407 ETR of account details and real time statistics such as accidents, congestion, trip capture
+                                                status, and billing information. Bot would use AI to record customer’s regular trips and, using live information, inform user to leave earlier or later than usual depending on live highway status and weather.
                                         </p>
                                         <p>
                                             This application was implemented using Python and Facebook Messenger API, which communicated to existing 407 ETR APIs to link user messenger accounts to their 407 ETR transponder or license plate.
                                         </p>
                                     </div>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
                                 </div>
                             </div>
                         </div>
@@ -477,8 +787,160 @@
                 </div>
             </div>
         </div>
+        <!-- end modal-etr_chat -->
 
+        <!-- modal-fes_rowing -->
+        <div class="portfolio-modal modal fade" id="modal-fes_rowing" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">
+                                        Functional Electrical Stimulated Rowing Coaching System
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        Researched and developed a coaching system for patients rehabilitating from partial spinal cord injuries (SCI)
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/fes_rowing.png" alt="" />
+                                    <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Link</h6>
+                                        <p>
+                                            The paper written by the masters student I worked under can be found <a href="http://bit.ly/FesRowing" target="_blank">here</a>.
+                                        </p>
+                                        <h6>Timeline</h6>
+                                        <p>
+                                            May 2018 - August 2018
+                                        </p>
+                                        <h6>Languages & Tools</h6>
+                                        <ul>
+                                            <li>Python, PyQt</li>
+                                            <li>National Instruments Data Acquisiton Unit (NI DAQ)</li>
+                                            <li>National Instruments LabView NXG</li>
+                                        </ul><br/>
+                                        <h6>Team</h6>
+                                        <ul>
+                                            <li>Thomas Nguyen</li>
+                                            <li>Pirashanth Theventhiran</li>
+                                        </ul><br/>
+                                        <h6>Overview</h6>
+                                        <p>
+                                            Functional electrical stimulation (FES) is a non-invasive rehabilitative technology used to produce artificial contractions in muscles. This technology has been used on 
+                                            individuals with incomplete spinal cord injuries (iSCI) to enable them to perform rehabilitative rowing exercise, which combines the voluntary movement of the upper body 
+                                            with stimulated movement of the lower body. FES is often activated manually by the user, who often require months to achieve effective rowing technique with accurate FES 
+                                            timing. With that in mind, the goal of this application was to develop a rowing coaching system that, in real time, displays instructions on when to administer FES.
+                                        </p>
+                                        <h6>Implementation</h6>
+                                        <p>
+                                            In order to enable users to administer FES as well as monitor their force output, a Concept 2 rowing ergometer was attached with plate sensors, motion capture markers, and 
+                                            an FES trigger for user-administration of FES. The iSCI users would then have electrodes attached to their quadriceps and hamstring muscles, the muscles in which the FES would induce contraction.
+                                        </p>
+                                        <p>
+                                            The front end of this application was created using Python and PyQT5 to create the graphical user interface (GUI). The application was designed to be as intuitive as possible 
+                                            for the user and lower the technical barrier of entry typically associated with rowing. Users were able to set exercise parametrs and then visual as well as audio queues would 
+                                            be given to notify the user when to administer FES.
+                                        </p>
+                                        <p>
+                                            Data acquisition was done using a National Instruments Data Acquisition Unit  (NI DAQ). This DAQ was connected the rowing ergometer to the application and analyzed user-administered 
+                                            FES timing. Based on the analysis, feedback would be given to the user. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal-fes_rowing -->
 
+        <!-- modal-simple_maps -->
+        <div class="portfolio-modal modal fade" id="modal-simple_maps" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-header">
+                        <div class="close-modal" data-dismiss="modal">
+                            <i class="far fa-window-close fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">
+                                        SimpleMaps
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        A graphical information system (GIS) of the world's major cities that includes features such as route planning, points of interest, and a fully featured search bar
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/projects/simple_maps.png" alt="" />
+                                    <div class="justify-content-start" style="text-align: left;">
+                                        <h6>Timeline</h6>
+                                        <p>
+                                            January 2018 - April 2018
+                                        </p>
+                                        <h6>Languages & Tools</h6>
+                                        <ul>
+                                            <li>C++ (Dijkstra, A*, multithreading, simulated annealing, 2-opt)</li>
+                                            <li>OpenStreetMap API</li>
+                                            <li>OpenGL</li>
+                                        </ul><br/>
+                                        <h6>Team</h6>
+                                        <ul>
+                                            <li>Haley Cao</li>
+                                            <li>Chandra Gummaluru</li>
+                                            <li>Thomas Nguyen</li>
+                                        </ul><br/>
+                                        <h6>Overview</h6>
+                                        <p>
+                                            Our geographical information system (GIS), SimpleMaps, was a semester long project for the second year University of Toronto course ECE297: Design and Communication. 
+                                            The goal was to create an application to map major cities in the world using the OpenStreetMap database. In a group of three, we were to create the application and include 
+                                            as many features as time permitted. This project was a lot of fun as this was the first major project that I had created, and the amount of freedom given to us in terms of 
+                                            data structures and algorithms led to a lot of growth as a software engineer.
+                                        </p>
+                                        <h6>Implementation</h6>
+                                        <p>
+                                            The program was implemented in four stages to simplify the development process. The main objectives throughout this project was to make SimpleMaps minimalistic and responsive.
+                                        </p>
+                                        <p>
+                                            The first stage was to implement relevant basic functions, as well as define and initialize necessary data structures. Precautions were taken to minimize time complexity of these 
+                                            functions by selecting optimal data structures (ie. maps, unordered maps, tries, lists). In order to ensure SimpleMaps performance for the user, many data structures were initialized 
+                                            on application start which meant faster run time at the cost of higher memory consumption.
+                                        </p>
+                                        <p>
+                                            The second stage was to create the graphical user interface (GUI) using OpenGL as well as implement additional features. First we added natural features, building names, as well as
+                                                street names and directions to the SimpleMaps GUI in familiar or intuitive colours. Following that, we added coloured-icon markers on the map for points of interest and added a search
+                                                bar where the user can search for streets, intersections, points of interest, and even cities. The search bar was given added functionality by supporting fuzzy search, text-prediction, and auto-complete using tries.
+                                        </p>
+                                        <p>
+                                            The third stage was to implement a shortest-path algorithm to get from a starting location in SimpleMaps to an ending location. The goal of this step was to determine the most optimal 
+                                            route in terms of travel time and display this route in the SimpleMaps GUI. The shortest-path algorithm was implemented using a Dijkstra-A* hybrid. For searches from a specific location
+                                                to a non-specific destination, SimpleMaps would use Dijkstra to return the closest destination matching the search criteria. For searches from a specific location to a specific destination,
+                                                SimpleMaps would use A* to return the shortest path in terms of travel time to the unique destination. This hybrid algorithm resulted in run times 700% faster than the time limit provided by course instructors.
+                                        </p>
+                                        <p>
+                                            The final stage was to implement a solution to the travelling salesman problem, where there are 'packages' with a pickup and corresponding dropoff location. The goal of this step was to devise
+                                                the most optimal route in terms of travel time for any given set of 'packages' in any city. The initial implementation was a modified greedy approach, where the algorithm would first pickup
+                                                the nearest package, then either pickup another package or drop off a package depending on which was closest. Further implementations included 2-opt, multithreading, and simulated annealing to
+                                                improve the algorithm. The final implementation was 300% faster than the initial greedy implementation and resulted in our team finishing 21st out of the 110 teams involved in the course.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal-simple_maps -->
+        <!-- __________________________________________________________________________________________________________________________________ -->
 
     </body>
+    <!-- ################################################################################################################################## -->
 </html>
