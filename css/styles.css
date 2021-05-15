@@ -10242,11 +10242,7 @@ header.masthead .masthead-heading {
 @media (max-width: 1000px) {
 
   .close-header {
-    position: fixed;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    top: 1%;
-    right: 6%;
+    position: static;
   }
 
 }
