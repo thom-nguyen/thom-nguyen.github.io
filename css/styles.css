@@ -10188,6 +10188,15 @@ header.masthead .masthead-heading {
   max-width: 60%;
   margin: auto;
 }
+@media (max-width: 1000px) {
+
+  .portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100%;
+    margin: auto;
+  }
+
+}
 .portfolio-modal .modal-content {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -10229,6 +10238,17 @@ header.masthead .masthead-heading {
   padding-right: 1rem;
   top: 3%;
   right: 22%;
+}
+@media (max-width: 1000px) {
+
+  .close-header {
+    position: fixed;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 1%;
+    right: 6%;
+  }
+
 }
 .timeline {
   position: relative;
